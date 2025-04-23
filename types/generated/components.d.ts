@@ -12,7 +12,6 @@ export interface HomeSection1 extends Struct.ComponentSchema {
       Schema.Attribute.SetMinMaxLength<{
         maxLength: 200;
       }>;
-    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     imageLilnk: Schema.Attribute.String;
   };
 }
