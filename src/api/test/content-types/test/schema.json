@@ -1,16 +1,16 @@
 {
   "kind": "singleType",
-  "collectionName": "homes",
+  "collectionName": "tests",
   "info": {
-    "singularName": "home",
-    "pluralName": "homes",
-    "displayName": "Home"
+    "singularName": "test",
+    "pluralName": "tests",
+    "displayName": "test"
   },
   "options": {
     "draftAndPublish": true
   },
   "attributes": {
-    "title": {
+    "name": {
       "type": "string"
     }
   }
