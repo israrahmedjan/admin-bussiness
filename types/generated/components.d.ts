@@ -1,22 +1,26 @@
 import type { Schema, Struct } from '@strapi/strapi';
 
-export interface HomeSections extends Struct.ComponentSchema {
-  collectionName: 'components_home_sections';
+export interface HomeSection1 extends Struct.ComponentSchema {
+  collectionName: 'components_home_section1s';
   info: {
     description: '';
-    displayName: 'Sections';
+    displayName: 'Section1';
   };
   attributes: {
     content: Schema.Attribute.Text;
-    heading: Schema.Attribute.String;
-    imageLink: Schema.Attribute.String;
+    heading: Schema.Attribute.String &
+      Schema.Attribute.SetMinMaxLength<{
+        maxLength: 200;
+      }>;
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    imageLilnk: Schema.Attribute.String;
   };
 }
 
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
-      'home.sections': HomeSections;
+      'home.section1': HomeSection1;
     }
   }
 }

@@ -14,10 +14,10 @@
     "title": {
       "type": "string"
     },
-    "Sections": {
+    "Section1": {
       "type": "component",
-      "repeatable": true,
-      "component": "home.sections"
+      "repeatable": false,
+      "component": "home.section1"
     }
   }
 }
