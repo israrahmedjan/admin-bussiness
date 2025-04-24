@@ -1,11 +1,10 @@
 {
   "kind": "singleType",
-  "collectionName": "homepages",
+  "collectionName": "user2s",
   "info": {
-    "singularName": "homepage",
-    "pluralName": "homepages",
-    "displayName": "Homepage",
-    "description": ""
+    "singularName": "user2",
+    "pluralName": "user2s",
+    "displayName": "User2"
   },
   "options": {
     "draftAndPublish": true
@@ -22,12 +21,12 @@
     "Row1": {
       "type": "component",
       "repeatable": false,
-      "component": "home.section1"
+      "component": "user.row1"
     },
     "Row2": {
       "type": "component",
       "repeatable": false,
-      "component": "home.row2"
+      "component": "user.row2"
     }
   }
 }

@@ -1,0 +1,22 @@
+{
+  "kind": "singleType",
+  "collectionName": "payment_models",
+  "info": {
+    "singularName": "payment-model",
+    "pluralName": "payment-models",
+    "displayName": "PaymentModel"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "Row1": {
+      "type": "component",
+      "repeatable": false,
+      "component": "payment-model.row1"
+    }
+  }
+}

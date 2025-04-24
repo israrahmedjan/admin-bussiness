@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_general_headers",
+  "info": {
+    "displayName": "Header"
+  },
+  "options": {},
+  "attributes": {
+    "logo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "siteName": {
+      "type": "string",
+      "default": "Enter Project Name"
+    },
+    "faviconIcon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "siteDescription": {
+      "type": "text"
+    }
+  }
+}

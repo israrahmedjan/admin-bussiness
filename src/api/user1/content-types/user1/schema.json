@@ -1,10 +1,10 @@
 {
   "kind": "singleType",
-  "collectionName": "homepages",
+  "collectionName": "user1s",
   "info": {
-    "singularName": "homepage",
-    "pluralName": "homepages",
-    "displayName": "Homepage",
+    "singularName": "user1",
+    "pluralName": "user1s",
+    "displayName": "User1",
     "description": ""
   },
   "options": {
@@ -22,12 +22,12 @@
     "Row1": {
       "type": "component",
       "repeatable": false,
-      "component": "home.section1"
+      "component": "user.row1"
     },
     "Row2": {
       "type": "component",
       "repeatable": false,
-      "component": "home.row2"
+      "component": "user.row2"
     }
   }
 }
