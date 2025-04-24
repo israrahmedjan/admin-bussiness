@@ -14,15 +14,20 @@
     "title": {
       "type": "string"
     },
-    "Section1": {
-      "type": "component",
-      "repeatable": false,
-      "component": "home.section1"
-    },
     "Row2": {
       "type": "component",
       "repeatable": false,
       "component": "home.row2"
+    },
+    "SEO": {
+      "type": "component",
+      "repeatable": false,
+      "component": "general.seo"
+    },
+    "Row1": {
+      "type": "component",
+      "repeatable": false,
+      "component": "home.section1"
     }
   }
 }
