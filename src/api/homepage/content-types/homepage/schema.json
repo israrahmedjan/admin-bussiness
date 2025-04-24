@@ -18,6 +18,11 @@
       "type": "component",
       "repeatable": false,
       "component": "home.section1"
+    },
+    "Row2": {
+      "type": "component",
+      "repeatable": false,
+      "component": "home.row2"
     }
   }
 }

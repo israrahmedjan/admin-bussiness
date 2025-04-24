@@ -391,6 +391,7 @@ export interface ApiHomepageHomepage extends Struct.SingleTypeSchema {
     > &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
+    Row2: Schema.Attribute.Component<'home.row2', false>;
     Section1: Schema.Attribute.Component<'home.section1', false>;
     title: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
