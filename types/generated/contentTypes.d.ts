@@ -369,6 +369,45 @@ export interface AdminUser extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiCareerCareer extends Struct.CollectionTypeSchema {
+  collectionName: 'careers';
+  info: {
+    displayName: 'Career';
+    pluralName: 'careers';
+    singularName: 'career';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    apply_email: Schema.Attribute.Email;
+    benefits: Schema.Attribute.Text;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    datePublished: Schema.Attribute.Date;
+    department: Schema.Attribute.String;
+    isActive: Schema.Attribute.Boolean;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::career.career'
+    > &
+      Schema.Attribute.Private;
+    location: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    requirements: Schema.Attribute.Text;
+    slug: Schema.Attribute.UID<'title'>;
+    title: Schema.Attribute.String;
+    type: Schema.Attribute.Enumeration<
+      ['Ex:', 'Full Time', 'Part Time', 'Internship']
+    >;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiFooterFooter extends Struct.SingleTypeSchema {
   collectionName: 'footers';
   info: {
@@ -545,6 +584,7 @@ export interface ApiUser1User1 extends Struct.SingleTypeSchema {
 export interface ApiUser2User2 extends Struct.SingleTypeSchema {
   collectionName: 'user2s';
   info: {
+    description: '';
     displayName: 'User2';
     pluralName: 'user2s';
     singularName: 'user2';
@@ -1079,6 +1119,7 @@ declare module '@strapi/strapi' {
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
+      'api::career.career': ApiCareerCareer;
       'api::footer.footer': ApiFooterFooter;
       'api::header.header': ApiHeaderHeader;
       'api::homepage.homepage': ApiHomepageHomepage;

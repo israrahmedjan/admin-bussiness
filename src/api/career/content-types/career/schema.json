@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "careers",
+  "info": {
+    "singularName": "career",
+    "pluralName": "careers",
+    "displayName": "Career"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "department": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Ex:",
+        "Full Time",
+        "Part Time",
+        "Internship"
+      ]
+    },
+    "requirements": {
+      "type": "text"
+    },
+    "benefits": {
+      "type": "text"
+    },
+    "apply_email": {
+      "type": "email"
+    },
+    "isActive": {
+      "type": "boolean"
+    },
+    "datePublished": {
+      "type": "date"
+    }
+  }
+}
