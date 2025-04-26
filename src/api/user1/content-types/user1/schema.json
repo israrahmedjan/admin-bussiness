@@ -14,20 +14,75 @@
     "title": {
       "type": "string"
     },
-    "SEO": {
-      "type": "component",
-      "repeatable": false,
-      "component": "general.seo"
-    },
     "Row1": {
       "type": "component",
       "repeatable": false,
-      "component": "user.row1"
+      "component": "home.section1"
     },
     "Row2": {
       "type": "component",
       "repeatable": false,
-      "component": "user.row2"
+      "component": "home.row2"
+    },
+    "Row2Listing": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home.row2-listing"
+    },
+    "Row3": {
+      "type": "component",
+      "repeatable": false,
+      "component": "home.row3"
+    },
+    "Row3Listing": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home.row3-team"
+    },
+    "Row4": {
+      "type": "component",
+      "repeatable": false,
+      "component": "home.row4"
+    },
+    "Row4Listing": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home.row4-listing"
+    },
+    "Row5": {
+      "type": "component",
+      "repeatable": false,
+      "component": "home.row5"
+    },
+    "Row5Listing": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home.row5-listing"
+    },
+    "Row6": {
+      "type": "component",
+      "repeatable": false,
+      "component": "home.row6"
+    },
+    "Row6Listing": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home.row6-listing"
+    },
+    "Row7": {
+      "type": "component",
+      "repeatable": false,
+      "component": "home.row7"
+    },
+    "Row7Listing": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home.row7-listing"
+    },
+    "SEO": {
+      "type": "component",
+      "repeatable": false,
+      "component": "general.seo"
     }
   }
 }

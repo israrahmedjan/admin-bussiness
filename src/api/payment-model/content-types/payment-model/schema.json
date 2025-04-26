@@ -4,7 +4,8 @@
   "info": {
     "singularName": "payment-model",
     "pluralName": "payment-models",
-    "displayName": "PaymentModel"
+    "displayName": "PaymentModel",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -13,10 +14,85 @@
     "title": {
       "type": "string"
     },
+    "SEO": {
+      "type": "component",
+      "repeatable": false,
+      "component": "general.seo"
+    },
     "Row1": {
       "type": "component",
       "repeatable": false,
-      "component": "payment-model.row1"
+      "component": "user.row1"
+    },
+    "Row2": {
+      "type": "component",
+      "repeatable": false,
+      "component": "user.row2"
+    },
+    "Row2Listing": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home.row2-listing"
+    },
+    "Row3": {
+      "type": "component",
+      "repeatable": false,
+      "component": "home.row3"
+    },
+    "Row3Listing": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home.row3-team"
+    },
+    "Row4": {
+      "type": "component",
+      "repeatable": false,
+      "component": "home.row4"
+    },
+    "Row5": {
+      "type": "component",
+      "repeatable": false,
+      "component": "home.row5"
+    },
+    "Row5Listing": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home.row5-listing"
+    },
+    "Row4Listing": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home.row4-listing"
+    },
+    "Row6": {
+      "type": "component",
+      "repeatable": false,
+      "component": "home.row6"
+    },
+    "Row6Listing": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home.row6-listing"
+    },
+    "Row7": {
+      "type": "component",
+      "repeatable": false,
+      "component": "home.row7-listing"
+    },
+    "Row7Listing": {
+      "type": "component",
+      "repeatable": false,
+      "component": "home.row7-listing"
+    },
+    "Row8": {
+      "type": "component",
+      "repeatable": false,
+      "component": "home.row8"
+    },
+    "Row8Listing": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home.row8-listing"
     }
   }
 }

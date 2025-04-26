@@ -6,9 +6,9 @@
   },
   "options": {},
   "attributes": {
-    "btn": {
-      "type": "string",
-      "default": "Get a Ride"
+    "content": {
+      "type": "text",
+      "default": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,"
     },
     "image": {
       "type": "media",
@@ -21,58 +21,25 @@
         "audios"
       ]
     },
-    "icon1": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
+    "headingSmall": {
+      "type": "string",
+      "default": "Why do we use it"
     },
-    "icon2": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
-    },
-    "icon3": {
-      "type": "media",
-      "multiple": true,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
-    },
-    "icon1Data": {
-      "type": "text",
-      "default": "over 2000 years old. Richard McClintoc It is a long established"
-    },
-    "icon2Data": {
-      "type": "text",
-      "default": "over 2000 years old. Richard McClintoc It is a long established"
-    },
-    "icon3Data": {
-      "type": "text",
-      "default": "over 2000 years old. Richard McClintoc It is a long established"
+    "contentSmall": {
+      "type": "string",
+      "default": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock"
     },
     "heading": {
       "type": "string",
       "default": "Why do we use it"
     },
-    "content": {
-      "type": "text",
-      "default": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,"
+    "btnLabel": {
+      "type": "string",
+      "default": "Get a Ride"
+    },
+    "btnAction": {
+      "type": "string",
+      "default": "#"
     }
   }
 }

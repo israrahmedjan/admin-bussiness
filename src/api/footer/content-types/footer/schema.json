@@ -4,7 +4,8 @@
   "info": {
     "singularName": "footer",
     "pluralName": "footers",
-    "displayName": "Footer"
+    "displayName": "Footer",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -17,6 +18,11 @@
       "type": "component",
       "repeatable": false,
       "component": "general.footer"
+    },
+    "FooterListing": {
+      "type": "component",
+      "repeatable": true,
+      "component": "general.footer-listing"
     }
   }
 }

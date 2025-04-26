@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_general_listings",
+  "info": {
+    "displayName": "Listing",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "text",
+      "default": "Why do we use it"
+    },
+    "content": {
+      "type": "text",
+      "default": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,"
+    },
+    "headingSmall": {
+      "type": "string",
+      "default": "Why do we use it"
+    },
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "contentShort": {
+      "type": "text",
+      "default": "It is a long established fact that over 2000 years old. Richard McClintoc It is a long established"
+    }
+  }
+}

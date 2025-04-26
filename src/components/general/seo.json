@@ -7,13 +7,16 @@
   "options": {},
   "attributes": {
     "metaTitle": {
-      "type": "string"
+      "type": "string",
+      "default": "My Website"
     },
     "metaDescription": {
-      "type": "text"
+      "type": "text",
+      "default": "Website Descriptions"
     },
     "keywords": {
-      "type": "text"
+      "type": "text",
+      "default": "home,services,about us"
     }
   }
 }

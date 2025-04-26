@@ -1,0 +1,43 @@
+{
+  "collectionName": "components_home_row8_listings",
+  "info": {
+    "displayName": "Row8Listing"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string",
+      "default": "Why do we use it"
+    },
+    "headingSmall": {
+      "type": "string",
+      "default": "Why do we use it"
+    },
+    "content": {
+      "type": "text",
+      "default": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters"
+    },
+    "contentSmall": {
+      "type": "text",
+      "default": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters"
+    },
+    "btnLabel": {
+      "type": "string",
+      "default": "More About It"
+    },
+    "btnAction": {
+      "type": "string",
+      "default": "#"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_general_footer_listings",
+  "info": {
+    "displayName": "FooterListing"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string",
+      "default": "Why do we use it"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "btnLabel": {
+      "type": "string",
+      "default": "More About It"
+    },
+    "btnAction": {
+      "type": "string"
+    }
+  }
+}

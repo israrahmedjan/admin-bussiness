@@ -1,14 +1,16 @@
 {
-  "collectionName": "components_home_section1s",
+  "collectionName": "components_home_row5_listings",
   "info": {
-    "displayName": "Row1",
-    "description": ""
+    "displayName": "Row5Listing"
   },
   "options": {},
   "attributes": {
     "heading": {
       "type": "string",
-      "maxLength": 200,
+      "default": "Why do we use it"
+    },
+    "headingSmall": {
+      "type": "string",
       "default": "Why do we use it"
     },
     "content": {
@@ -16,29 +18,25 @@
       "default": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters"
     },
     "image": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
       "allowedTypes": [
+        "images",
         "files",
-        "images"
-      ]
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
     },
-    "headingSmall": {
+    "btnLabel": {
       "type": "string",
-      "default": "Why do we use it"
+      "default": "More About It"
     },
     "contentSmall": {
-      "type": "string",
+      "type": "text",
       "default": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters"
     },
-    "btnlabel": {
-      "type": "string",
-      "default": "Get a Ride"
-    },
     "btnAction": {
-      "type": "string",
-      "default": "#"
+      "type": "string"
     }
   }
 }
