@@ -424,7 +424,6 @@ export interface ApiFooterFooter extends Struct.SingleTypeSchema {
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     Footer: Schema.Attribute.Component<'general.footer', false>;
-    FooterListing: Schema.Attribute.Component<'general.footer-listing', true>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -432,7 +431,14 @@ export interface ApiFooterFooter extends Struct.SingleTypeSchema {
     > &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
-    title: Schema.Attribute.String;
+    Row1: Schema.Attribute.Component<'home.section1', false>;
+    Row1Listing: Schema.Attribute.Component<'home.row1-listing', true>;
+    Row2: Schema.Attribute.Component<'home.row2', false>;
+    Row3: Schema.Attribute.Component<'home.row3', false>;
+    Row3Listing: Schema.Attribute.Component<'home.row3-team', true>;
+    Row4: Schema.Attribute.Component<'home.row4', false>;
+    Row4Listing: Schema.Attribute.Component<'home.row4-listing', true>;
+    SocialMedia: Schema.Attribute.Component<'general.social-media', true>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -491,6 +497,7 @@ export interface ApiHomepageHomepage extends Struct.SingleTypeSchema {
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
     Row1: Schema.Attribute.Component<'home.section1', false>;
+    Row1Listing: Schema.Attribute.Component<'home.row1-listing', true>;
     Row2: Schema.Attribute.Component<'home.row2', false>;
     Row2Listing: Schema.Attribute.Component<'home.row2-listing', true>;
     Row3: Schema.Attribute.Component<'home.row3', false>;
@@ -536,6 +543,7 @@ export interface ApiPaymentModelPaymentModel extends Struct.SingleTypeSchema {
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
     Row1: Schema.Attribute.Component<'user.row1', false>;
+    Row1Listing: Schema.Attribute.Component<'home.row1-listing', true>;
     Row2: Schema.Attribute.Component<'user.row2', false>;
     Row2Listing: Schema.Attribute.Component<'home.row2-listing', true>;
     Row3: Schema.Attribute.Component<'home.row3', false>;
@@ -578,6 +586,7 @@ export interface ApiUser1User1 extends Struct.SingleTypeSchema {
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
     Row1: Schema.Attribute.Component<'home.section1', false>;
+    Row1Listing: Schema.Attribute.Component<'home.row1-listing', true>;
     Row2: Schema.Attribute.Component<'home.row2', false>;
     Row2Listing: Schema.Attribute.Component<'home.row2-listing', true>;
     Row3: Schema.Attribute.Component<'home.row3', false>;
@@ -590,6 +599,8 @@ export interface ApiUser1User1 extends Struct.SingleTypeSchema {
     Row6Listing: Schema.Attribute.Component<'home.row6-listing', true>;
     Row7: Schema.Attribute.Component<'home.row7', false>;
     Row7Listing: Schema.Attribute.Component<'home.row7-listing', true>;
+    Row8: Schema.Attribute.Component<'home.row8', false>;
+    Row8Listing: Schema.Attribute.Component<'home.row8-listing', true>;
     SEO: Schema.Attribute.Component<'general.seo', false>;
     title: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
@@ -618,6 +629,7 @@ export interface ApiUser2User2 extends Struct.SingleTypeSchema {
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
     Row1: Schema.Attribute.Component<'home.section1', false>;
+    Row1Listing: Schema.Attribute.Component<'home.row1-listing', true>;
     Row2: Schema.Attribute.Component<'user.row2', false>;
     Row2Listing: Schema.Attribute.Component<'home.row2-listing', true>;
     Row3: Schema.Attribute.Component<'home.row3', false>;

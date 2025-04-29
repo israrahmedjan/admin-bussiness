@@ -1,0 +1,41 @@
+{
+  "collectionName": "components_general_social_medias",
+  "info": {
+    "displayName": "SocialMedia",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string",
+      "default": "Facebook"
+    },
+    "content": {
+      "type": "text",
+      "default": "Social content"
+    },
+    "btnLabel": {
+      "type": "string",
+      "default": "Facebook"
+    },
+    "btnAction": {
+      "type": "string",
+      "default": "/facbook"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Active": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

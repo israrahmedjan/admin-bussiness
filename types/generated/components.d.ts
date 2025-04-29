@@ -95,6 +95,44 @@ export interface GeneralSeo extends Struct.ComponentSchema {
   };
 }
 
+export interface GeneralSocialMedia extends Struct.ComponentSchema {
+  collectionName: 'components_general_social_medias';
+  info: {
+    description: '';
+    displayName: 'SocialMedia';
+  };
+  attributes: {
+    Active: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<true>;
+    btnAction: Schema.Attribute.String & Schema.Attribute.DefaultTo<'/facbook'>;
+    btnLabel: Schema.Attribute.String & Schema.Attribute.DefaultTo<'Facebook'>;
+    content: Schema.Attribute.Text &
+      Schema.Attribute.DefaultTo<'Social content'>;
+    heading: Schema.Attribute.String & Schema.Attribute.DefaultTo<'Facebook'>;
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+  };
+}
+
+export interface HomeRow1Listing extends Struct.ComponentSchema {
+  collectionName: 'components_home_row1_listings';
+  info: {
+    displayName: 'Row1Listing';
+  };
+  attributes: {
+    btnAction: Schema.Attribute.String & Schema.Attribute.DefaultTo<'/gosite'>;
+    btnLabel: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'More About It'>;
+    content: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters'>;
+    contentSmall: Schema.Attribute.Text &
+      Schema.Attribute.DefaultTo<'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters'>;
+    heading: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Why do we use it'>;
+    headingSmall: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Why do we use it'>;
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+  };
+}
+
 export interface HomeRow2 extends Struct.ComponentSchema {
   collectionName: 'components_home_row2s';
   info: {
@@ -473,6 +511,8 @@ declare module '@strapi/strapi' {
       'general.header': GeneralHeader;
       'general.listing': GeneralListing;
       'general.seo': GeneralSeo;
+      'general.social-media': GeneralSocialMedia;
+      'home.row1-listing': HomeRow1Listing;
       'home.row2': HomeRow2;
       'home.row2-listing': HomeRow2Listing;
       'home.row3': HomeRow3;

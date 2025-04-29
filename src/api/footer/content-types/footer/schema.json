@@ -11,18 +11,50 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "title": {
-      "type": "string"
-    },
     "Footer": {
       "type": "component",
       "repeatable": false,
       "component": "general.footer"
     },
-    "FooterListing": {
+    "Row1": {
+      "type": "component",
+      "repeatable": false,
+      "component": "home.section1"
+    },
+    "Row1Listing": {
       "type": "component",
       "repeatable": true,
-      "component": "general.footer-listing"
+      "component": "home.row1-listing"
+    },
+    "Row2": {
+      "type": "component",
+      "repeatable": false,
+      "component": "home.row2"
+    },
+    "Row3": {
+      "type": "component",
+      "repeatable": false,
+      "component": "home.row3"
+    },
+    "Row3Listing": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home.row3-team"
+    },
+    "Row4": {
+      "type": "component",
+      "repeatable": false,
+      "component": "home.row4"
+    },
+    "Row4Listing": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home.row4-listing"
+    },
+    "SocialMedia": {
+      "type": "component",
+      "repeatable": true,
+      "component": "general.social-media"
     }
   }
 }

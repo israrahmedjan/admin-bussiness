@@ -83,6 +83,21 @@
       "type": "component",
       "repeatable": false,
       "component": "general.seo"
+    },
+    "Row8": {
+      "type": "component",
+      "repeatable": false,
+      "component": "home.row8"
+    },
+    "Row8Listing": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home.row8-listing"
+    },
+    "Row1Listing": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home.row1-listing"
     }
   }
 }
